@@ -40,9 +40,9 @@ const Journey = () => {
     {
       id: 3,
       title: 'ICSSR Grant Project',
-      subtitle: 'Karnataka Police Officers Development App',
+      subtitle: 'Karnataka Police Officers Development App had won ₹18 Lakhs Grant',
       period: '2025',
-      status: '₹18 Lakhs Grant Winner',
+      status: 'Achievement',
       icon: Award,
       type: 'achievement',
       color: 'from-purple-500 to-pink-500'
