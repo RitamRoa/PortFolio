@@ -7,7 +7,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'JalRakshak',
+      title: 'JalRakshak - 1st Year',
       description: 'A water conservation platform that empowers communities to solve water issues together. This project focuses on reporting and tracking water-related problems to ensure timely solutions.',
       image: '/jalrakshak.png',
       liveLink: 'https://jal-rakshak.vercel.app',
@@ -15,7 +15,7 @@ const Projects = () => {
       technologies: ['React', 'JavaScript', 'Tailwind CSS']
     },
     {
-      title: 'Telugu to English Translator',
+      title: 'Telugu to English Translator - 1st Year',
       description: 'Real-time speech translation application that converts Telugu speech to English text. With over 82 million Telugu speakers worldwide, this tool bridges important communication gaps for Telugu speakers.',
       image: '/tel-eng.png',
       liveLink: 'https://teltoeng.vercel.app/',
@@ -23,7 +23,7 @@ const Projects = () => {
       technologies: ['React', 'Web Speech API', 'Translation API']
     },
     {
-      title: 'HashGenie AI',
+      title: 'HashGenie AI - 1st Year',
       description: 'An intelligent AI agent that generates relevant social media hashtags based on user input. The system analyzes content and automatically sends personalized hashtag recommendations via email using Make.com automation.',
       image: '/hashgenieai.png',
       liveLink: 'https://tally.so/r/3j4aqE',
@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['AI/ML', 'Make.com', 'Email Automation', 'Natural Language Processing']
     },
     {
-      title: 'Horroa',
+      title: 'Horroa - 1st Year',
       description: 'A backrooms-inspired horror game built in Unity where BoB, the decrepit builder, chases you through endless maze-like corridors. Experience psychological horror in procedurally generated environments.',
       image: '/horroa.jpeg',
       repoLink: 'https://github.com/RitamRoa',
