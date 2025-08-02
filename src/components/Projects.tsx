@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: 'JalRakshak',
       description: 'A water conservation platform that empowers communities to solve water issues together. This project focuses on reporting and tracking water-related problems to ensure timely solutions.',
-      image: 'https://i.ibb.co/LzWTvYC/jal-rakshak.png',
+      image: '/jalrakshak.png',
       liveLink: 'https://jal-rakshak.vercel.app',
       repoLink: 'https://github.com/RitamRoa',
       technologies: ['React', 'JavaScript', 'Tailwind CSS']
@@ -17,10 +17,25 @@ const Projects = () => {
     {
       title: 'Telugu to English Translator',
       description: 'Real-time speech translation application that converts Telugu speech to English text. With over 82 million Telugu speakers worldwide, this tool bridges important communication gaps for Telugu speakers.',
-      image: 'https://i.ibb.co/CBtWZsZ/tel-to-eng.png',
+      image: '/tel-eng.png',
       liveLink: 'https://teltoeng.vercel.app/',
       repoLink: 'https://github.com/RitamRoa',
       technologies: ['React', 'Web Speech API', 'Translation API']
+    },
+    {
+      title: 'HashGenie AI',
+      description: 'An intelligent AI agent that generates relevant social media hashtags based on user input. The system analyzes content and automatically sends personalized hashtag recommendations via email using Make.com automation.',
+      image: '/hashgenieai.png',
+      liveLink: 'https://tally.so/r/3j4aqE',
+      repoLink: 'https://github.com/RitamRoa',
+      technologies: ['AI/ML', 'Make.com', 'Email Automation', 'Natural Language Processing']
+    },
+    {
+      title: 'Horroa',
+      description: 'A backrooms-inspired horror game built in Unity where BoB, the decrepit builder, chases you through endless maze-like corridors. Experience psychological horror in procedurally generated environments.',
+      image: '/horroa.jpeg',
+      repoLink: 'https://github.com/RitamRoa',
+      technologies: ['Unity', 'C#', 'Game Development']
     },
   ];
 
@@ -41,8 +56,8 @@ const Projects = () => {
               key={project.title}
               className={`tech-border bg-[#0a0f1c]/80 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-lg transition-all duration-700 transform hover:-translate-y-2 ${
                 isVisible 
-                  ? 'opacity-100 ' + (index % 2 === 0 ? 'translate-x-0' : '-translate-x-0') 
-                  : 'opacity-0 ' + (index % 2 === 0 ? '-translate-x-full' : 'translate-x-full')
+                  ? 'opacity-100 translate-x-0' 
+                  : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
@@ -71,14 +86,16 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors font-display text-sm"
-                  >
-                    <ExternalLink size={16} className="mr-1" /> Live Demo
-                  </a>
+                  {project.liveLink && (
+                    <a 
+                      href={project.liveLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors font-display text-sm"
+                    >
+                      <ExternalLink size={16} className="mr-1" /> Live Demo
+                    </a>
+                  )}
                   <a 
                     href={project.repoLink} 
                     target="_blank" 
@@ -91,6 +108,19 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* View More Button */}
+        <div className={`flex justify-center mt-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '600ms' }}>
+          <a 
+            href="https://github.com/RitamRoa?tab=repositories" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group inline-flex items-center bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 hover:text-blue-300 px-8 py-3 rounded-lg transition-all duration-300 font-display font-medium border border-blue-500/30 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20"
+          >
+            View All Projects
+            <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </a>
         </div>
       </div>
     </section>

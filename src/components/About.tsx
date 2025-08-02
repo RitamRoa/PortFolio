@@ -20,10 +20,10 @@ const About = () => {
             I'm a Computer Science Engineering student at RV University, passionate about solving real-world problems through technology. With a strong foundation in full-stack development and a particular focus on frontend technologies, I approach each project with creativity and precision.
           </p>
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-            As an aspiring AI/ML engineer, I'm fascinated by how artificial intelligence can transform industries and enhance human capabilities. I bring an entrepreneurial mindset to every challenge, constantly looking for innovative solutions and opportunities to create impact.
+            As an Comp-Sci Engineer, I'm fascinated by how anything and everything related to it. It first started out with me tel-eng project as many of my friends in the campus spoke telugu and i wanted to know what they were saying.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed">
-            When I'm not coding, you can find me listening to rock music or developing games as a creative outlet. This blend of technical expertise and creative thinking allows me to approach problems from unique perspectives and deliver comprehensive solutions.
+            When I'm not coding, you can find me listening to rock music or developing games as a creative outlet. Made a horror game which is inspired from the youtube series "The Backrooms" by Kane Pixels, which you can check out on my GitHub.
           </p>
         </div>
       </div>
